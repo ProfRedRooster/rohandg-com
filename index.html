@@ -14,6 +14,32 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://incendere.nl/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style>
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 15px;
+      margin: 15px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+    .project-card h3 {
+      margin-top: 0;
+    }
+    .project-card p {
+      margin-bottom: 10px;
+    }
+    .project-card a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -27,7 +53,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-       <a class="navbar-brand" href="#page-top">ROHANDG.NL</a>
+       <a class="navbar-brand" href="#page-top">ROHANDG.COM</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -38,6 +64,13 @@
           <li><a class="page-scroll" href="#donate">Donate</a></li>
           <li><a class="page-scroll" href="#contact">Contact</a></li>
           <li><a class="page-scroll" href="https://incendere.nl">Login</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://rohandg.com">English</a></li>
+              <li><a href="https://rohandg.nl">Dutch</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -51,7 +84,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h1>ROHAN DE GRAAF</h1>
-          <h2>The fithteen year old thinkerer that tries to thinker everything he can.</h2>
+          <h2>The fifteen year old thinker that tries to tinker with everything he can.</h2>
           <a class="btn btn-default page-scroll" href="#public">Tell me more about his projects</a>
         </div>
       </div>
@@ -62,157 +95,215 @@
   <section id="public" class="public" style="padding-top: 70px">
     <div class="container">
       <div class="row">
-          <h2>Public projects</h2>
-        <div class="row">
-        <div class="col-md-4">
-          <h2>Djog bot</h2>
-          <p>A bot project for Discord.</p>
-          <p>Skills: (Python, Discord API)</p>
-          <a href="https://github.com/daanschenkel/djogbot" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        <div class="col-lg-12">
+          <h2>Public Projects</h2>
         </div>
         <div class="col-md-4">
-          <h2>A processing screensaver</h2>
-          <p>A screensaver created with Processing.</p>
-          <p>Skills: (Processing)</p>
-          <a href="https://github.com/ProfRedRooster/screensaver" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <div class="project-card">
+            <h3>Djog bot</h3>
+            <p>A bot project for Discord.</p>
+            <p>Skills: (Python, Discord API)</p>
+            <a href="https://github.com/daanschenkel/djogbot" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Vuur jongen, water meisje game attempt</h2>
-          <p>An attempt to create the game "Fireboy and Watergirl" (Vuur jongen, water meisje) using PICO-8.</p>
-          <p>Skills: (PICO-8)</p>
-          <a href="https://github.com/richelbilderbeek/djog_picos_2018" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <div class="project-card">
+            <h3>A processing screensaver</h3>
+            <p>A screensaver created with Processing.</p>
+            <p>Skills: (Processing)</p>
+            <a href="https://github.com/ProfRedRooster/screensaver" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>A computer virus</h2>
-          <p>Pls dont open. I dont know what it wil destroy</p>
-          <p>Skills: (Visualbasic and Exectutables)</p>
-          <a href="https://github.com/ProfRedRooster/QuintinoM" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <div class="project-card">
+            <h3>Vuur jongen, water meisje game attempt</h3>
+            <p>An attempt to create the game "Fireboy and Watergirl" (Vuur jongen, water meisje) using PICO-8.</p>
+            <p>Skills: (PICO-8)</p>
+            <a href="https://github.com/richelbilderbeek/djog_picos_2018" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Team Universe Web Browser</h2>
-          <p>A web browser project.</p>
-          <p>Skills: (C++)</p>
-          <a href="https://github.com/djog/Team-Universe" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <div class="project-card">
+            <h3>A computer virus</h3>
+            <p>Pls dont open. I dont know what it will destroy.</p>
+            <p>Skills: (Visual Basic and Executables)</p>
+            <a href="https://github.com/ProfRedRooster/QuintinoM" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Gif for school project</h2>
-          <p>A gif created for a school project.</p>
-          <p>Skills: (Gif)</p>
-          <a href="https://rohandg.nl/Nederlands-gif.html" target="_blank" rel="noopener noreferrer">View Gif</a>
+          <div class="project-card">
+            <h3>Team Universe Web Browser</h3>
+            <p>A web browser project.</p>
+            <p>Skills: (C++)</p>
+            <a href="https://github.com/djog/Team-Universe" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>SPQR Word Searcher</h2>
-          <p>A word searcher for the Latin book SPQR.</p>
-          <p>Skills: (PHP, json)</p>
-          <a href="https://spqr.rohandg.nl/" target="_blank" rel="noopener noreferrer">View Word Searcher</a>
+          <div class="project-card">
+            <h3>Gif for school project</h3>
+            <p>A gif created for a school project.</p>
+            <p>Skills: (Gif)</p>
+            <a href="https://rohandg.nl/Nederlands-gif.html" target="_blank" rel="noopener noreferrer">View Gif</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Greek History Website</h2>
-          <p>A website about Ancient Greek history.</p>
-          <p>Skills: (Html and css)</p>
-          <a href="https://grieks.rohandg.nl/" target="_blank" rel="noopener noreferrer">View Website</a>
+          <div class="project-card">
+            <h3>SPQR Word Searcher</h3>
+            <p>A word searcher for the Latin book SPQR.</p>
+            <p>Skills: (PHP, JSON)</p>
+            <a href="https://spqr.rohandg.nl/" target="_blank" rel="noopener noreferrer">View Word Searcher</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Tenisballen Website</h2>
-          <p>A website created for a friend's school project.</p>
-          <p>Skills: (Html and css)</p>
-          <a href="https://github.com/ProfRedRooster/AJ-THIJS-tenisballen" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <div class="project-card">
+            <h3>Greek History Website</h3>
+            <p>A website about Ancient Greek history.</p>
+            <p>Skills: (HTML and CSS)</p>
+            <a href="https://grieks.rohandg.nl/" target="_blank" rel="noopener noreferrer">View Website</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Hardcore Song</h2>
-          <p>A hardcore version of a song.</p>
-          <p>Skills: (Ableton and using stems)</p>
-          <a href="https://20gramzout.rohandg.nl/" target="_blank" rel="noopener noreferrer">Listen to Song</a>
+          <div class="project-card">
+            <h3>Tenisballen Website</h3>
+            <p>A website created for a friend's school project.</p>
+            <p>Skills: (HTML and CSS)</p>
+            <a href="https://github.com/ProfRedRooster/AJ-THIJS-tenisballen" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Geography Project</h2>
-          <p>Some random thing I did for Geography. (9,5)</p>
-          <p>Skills: (Geography and html)</p>
-          <a href="https://ak.rohandg.nl" target="_blank" rel="noopener noreferrer">View Project</a>
+          <div class="project-card">
+            <h3>Hardcore Song</h3>
+            <p>A hardcore version of a song.</p>
+            <p>Skills: (Ableton and using stems)</p>
+            <a href="https://20gramzout.rohandg.nl/" target="_blank" rel="noopener noreferrer">Listen to Song</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Debating Speech</h2>
-          <p>A speech written for "NK onderbouw debatteren 2023".</p>
-          <p>Skills: (Debating)</p>
-          <a href="https://debatteren.rohandg.nl" target="_blank" rel="noopener noreferrer">View Speech</a>
+          <div class="project-card">
+            <h3>Geography Project</h3>
+            <p>Some random thing I did for Geography. (9.5)</p>
+            <p>Skills: (Geography and HTML)</p>
+            <a href="https://ak.rohandg.nl" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Disco Word Searcher</h2>
-          <p>A word searcher for the Latin book "Disco".</p>
-          <p>Skills: (Html, Javascript and Json)</p>
-          <a href="https://disco.rohandg.nl/" target="_blank" rel="noopener noreferrer">View Word Searcher</a>
+          <div class="project-card">
+            <h3>Debating Speech</h3>
+            <p>A speech written for "NK onderbouw debatteren 2023".</p>
+            <p>Skills: (Debating)</p>
+            <a href="https://debatteren.rohandg.nl" target="_blank" rel="noopener noreferrer">View Speech</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Invoice Generator</h2>
-          <p>An invoice generator project.</p>
-          <p>Skills: (Html, css and javascript)</p>
-          <a href="https://invoice.rohandg.nl" target="_blank" rel="noopener noreferrer">View Generator</a>
+          <div class="project-card">
+            <h3>Disco Word Searcher</h3>
+            <p>A word searcher for the Latin book "Disco".</p>
+            <p>Skills: (HTML, JavaScript, JSON)</p>
+            <a href="https://disco.rohandg.nl/" target="_blank" rel="noopener noreferrer">View Word Searcher</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>URL Shortener</h2>
-          <p>A URL shortening service.</p>
-          <p>Skills: (PHP, SQL and nginx)</p>
-          <a href="https://shortje.nl" target="_blank" rel="noopener noreferrer">Visit Shortener</a>
+          <div class="project-card">
+            <h3>Invoice Generator</h3>
+            <p>An invoice generator project.</p>
+            <p>Skills: (HTML, CSS, JavaScript)</p>
+            <a href="https://invoice.rohandg.nl" target="_blank" rel="noopener noreferrer">View Generator</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Random Ice Generator</h2>
-          <p>A project for generating random ice formations.</p>
-          <p>Skills: (Html, css and javascript)</p>
-          <a href="https://randomijs.rohandg.nl/" target="_blank" rel="noopener noreferrer">View Generator</a>
+          <div class="project-card">
+            <h3>URL Shortener</h3>
+            <p>A URL shortening service.</p>
+            <p>Skills: (PHP, SQL, Nginx)</p>
+            <a href="https://shortje.nl" target="_blank" rel="noopener noreferrer">Visit Shortener</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Phone Background Generator</h2>
-          <p>A tool for generating phone backgrounds.</p>
-          <p>Skills: (Html and Javascript)</p>
-          <a href="https://wsj.rohandg.nl" target="_blank" rel="noopener noreferrer">View Generator</a>
+          <div class="project-card">
+            <h3>Random Ice Generator</h3>
+            <p>A project for generating random ice formations.</p>
+            <p>Skills: (HTML, CSS, JavaScript)</p>
+            <a href="https://randomijs.rohandg.nl/" target="_blank" rel="noopener noreferrer">View Generator</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Scouting Tecumseh Prototype Site</h2>
-          <p>A prototype website made for scouting Tecumseh.</p>
-          <p>Skills: (Html, CSS and for some part Wordpress/Joomla)</p>
-          <a href="https://tecumseh.rohandg.nl" target="_blank" rel="noopener noreferrer">View Prototype</a>
+          <div class="project-card">
+            <h3>Phone Background Generator</h3>
+            <p>A tool for generating phone backgrounds.</p>
+            <p>Skills: (HTML, JavaScript)</p>
+            <a href="https://wsj.rohandg.nl" target="_blank" rel="noopener noreferrer">View Generator</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Public Image Hoster</h2>
-          <p>A project for hosting public images.</p>
-          <p>Skills: (PHP, css and nginx)</p>
-          <a href="https://img.shortje.nl" target="_blank" rel="noopener noreferrer">Visit Image Hoster</a>
+          <div class="project-card">
+            <h3>Scouting Tecumseh Prototype Site</h3>
+            <p>A prototype website made for scouting Tecumseh.</p>
+            <p>Skills: (HTML, CSS, WordPress/Joomla)</p>
+            <a href="https://tecumseh.rohandg.nl" target="_blank" rel="noopener noreferrer">View Prototype</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>VogelVilla Recycling Project</h2>
-          <p>A recycling project done with classmates named VogelVilla.</p>
-          <p>Skills: (Html)</p>
-          <a href="https://vogelvilla.rohandg.nl/" target="_blank" rel="noopener noreferrer">View Project</a>
+          <div class="project-card">
+            <h3>Public Image Hoster</h3>
+            <p>A project for hosting public images.</p>
+            <p>Skills: (PHP, CSS, Nginx)</p>
+            <a href="https://img.shortje.nl" target="_blank" rel="noopener noreferrer">Visit Image Hoster</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>NPK subkamp logo's</h2>
-          <p>Logo's i created for NPK</p>
-          <p>Skills: (Linearty curve and working with difficult people)</p>
-          <a href="https://cdn.rohandg.nl/NPK%20logo%202024/DEFINITIEF.svg" target="_blank" rel="noopener noreferrer">View Project</a>
+          <div class="project-card">
+            <h3>VogelVilla Recycling Project</h3>
+            <p>A recycling project done with classmates named VogelVilla.</p>
+            <p>Skills: (HTML)</p>
+            <a href="https://vogelvilla.rohandg.nl/" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>NPK Hike Logbook front</h2>
-          <p>A front i made for a hike (Tecumseh)</p>
-          <p>Skills: (Pirating, using Adobe InDesign 2024 and local AI promting for the backgroundimage)</p>
-          <a href="https://cdn.rohandg.nl/Logboek%20npk_page-0001.jpg" target="_blank" rel="noopener noreferrer">View Project</a>
+          <div class="project-card">
+            <h3>NPK subkamp logo's</h3>
+            <p>Logos I created for NPK.</p>
+            <p>Skills: (Line art, working with difficult people)</p>
+            <a href="https://cdn.rohandg.nl/NPK%20logo%202024/DEFINITIEF.svg" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </div>
+          <div class="col-md-4">
+          <div class="project-card">
+            <h3>NPK Hike Logbook front</h3>
+            <p>A front I made for a hike (Tecumseh).</p>
+            <p>Skills: (Pirating, using Adobe InDesign 2024, local AI prompting for the background image)</p>
+            <a href="https://cdn.rohandg.nl/Logboek%20npk_page-0001.jpg" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>NPK Hike Logbook front</h2>
-          <p>A front i made for a hike (Lookwide)</p>
-          <p>Skills: (Pirating, using Adobe InDesign 2024 and local AI promting for the backgroundimage)</p>
-          <a href="https://cdn.rohandg.nl/Logboek%20npk%20lookies_pages-to-jpg-0001.jpg" target="_blank" rel="noopener noreferrer">View Project</a>
+          <div class="project-card">
+            <h3>NPK Hike Logbook front</h3>
+            <p>A front I made for a hike (Lookwide).</p>
+            <p>Skills: (Pirating, using Adobe InDesign 2024, local AI prompting for the background image)</p>
+            <a href="https://cdn.rohandg.nl/Logboek%20npk%20lookies_pages-to-jpg-0001.jpg" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
         </div>
         <div class="col-md-4">
-            <h2>Start Page</h2>
+          <div class="project-card">
+            <h3>Start Page</h3>
             <p>A personalized start page project.</p>
-            <p>Skills: (Html, css and Javasript)</p>
+            <p>Skills: (HTML, CSS, JavaScript)</p>
             <a href="http://start.rohandg.nl" target="_blank" rel="noopener noreferrer">Visit Start Page</a>
           </div>
-          <div class="col-md-4">
-            <h2>Where is Duco?</h2>
-            <p>A tracking site where "HOPMAN" stickers are</p>
-            <p>Skills: (Html, PHP and Leafjet JS)</p>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <h3>Where is Duco?</h3>
+            <p>A tracking site where "HOPMAN" stickers are.</p>
+            <p>Skills: (HTML, PHP, Leaflet JS)</p>
             <a href="http://waarishopman.rohandg.nl" target="_blank" rel="noopener noreferrer">Visit Collection</a>
+          </div>
+        </div>
+      <div class="col-md-4">
+          <div class="project-card">
+            <h3>Parachutist?</h3>
+            <p>A simulation in coach7 about an valling person.</p>
+            <p>Skills: (Physics and coach7)</p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Visit simulation</a>
           </div>
         </div>
       </div>
@@ -224,8 +315,87 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2>Private projects</h2>
+          <h2>Private Projects</h2>
         </div>
+        <div class="row">
+  <div class="col-md-4">
+    <div class="project-card">
+      <h3>URL Shortener</h3>
+      <p>A tool for shortening URLs.</p>
+      <p>Skills: (PHP and MySQL)</p>
+      <a href="https://short.rohandg.nl/" target="_blank" rel="noopener noreferrer">Visit URL Shortener</a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="project-card">
+      <h3>Search Engine</h3>
+      <p>A search engine project.</p>
+      <p>Skills: (PHP, MySQL, NGINX, and a custom scrape bot)</p>
+      <a href="http://search.rohandg.nl" target="_blank" rel="noopener noreferrer">Visit Search Engine</a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="project-card">
+      <h3>Piratebay Secured Frontend</h3>
+      <p>A secured frontend for accessing Piratebay.</p>
+      <p>Skills: (PHP, MySQL, and NGINX)</p>
+      <a href="http://thebay.rohandg.nl" target="_blank" rel="noopener noreferrer">Visit Piratebay Secured Frontend</a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="project-card">
+      <h3>Image Hoster and Shortener</h3>
+      <p>A project for hosting and shortening image links.</p>
+      <p>Skills: (PHP, MySQL, and NGINX)</p>
+      <a href="http://images.rohandg.nl" target="_blank" rel="noopener noreferrer">Visit Image Hoster and Shortener</a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="project-card">
+      <h3>Website Manager</h3>
+      <p>A tool for managing websites.</p>
+      <p>Skills: (Linux, reverse proxies, and Cloudflare)</p>
+      <a href="http://cp.rohandg.nl" target="_blank" rel="noopener noreferrer">Visit Website Manager</a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="project-card">
+      <h3>Docker Manager</h3>
+      <p>A tool for managing Docker containers.</p>
+      <p>Skills: (Docker)</p>
+      <a href="http://pt.rohandg.nl" target="_blank" rel="noopener noreferrer">Visit Docker Manager</a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="project-card">
+      <h3>AI Web Interface</h3>
+      <p>A web interface for interacting with a custom-trained language model.</p>
+      <p>Skills: (Custom AI training models)</p>
+      <a href="http://ai.rohandg.nl" target="_blank" rel="noopener noreferrer">Visit AI Web Interface</a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="project-card">
+      <h3>AI Images Web Interface</h3>
+      <p>A web interface for interacting with a custom-trained image generator.</p>
+      <p>Skills: (Custom AI training models)</p>
+      <a href="http://ai.rohandg.nl" target="_blank" rel="noopener noreferrer">Visit AI Images Web Interface</a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="project-card">
+      <h3>Secure Login System</h3>
+      <p>An SSO login system that integrates with almost all my sites.</p>
+      <p>Skills: (NGINX, PHP, MySQL)</p>
+      <a href="http://ai.rohandg.nl" target="_blank" rel="noopener noreferrer">Visit Rohandg Secure Interface</a>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   </section>
