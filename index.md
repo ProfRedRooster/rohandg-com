@@ -1,3 +1,7 @@
+---
+layout: default
+title: Home
+---
 # Rohan de Graaf - 15 Year Old Programmer - Projects
 
 Explore the projects and achievements of Rohan de Graaf, a talented 15-year-old programmer. Check out projects, contact information, and more.
